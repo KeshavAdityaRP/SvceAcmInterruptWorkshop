@@ -1,0 +1,11 @@
+body {
+    background-color: blue;
+}
+
+#special{
+	background-color: green;
+}
+
+div .blue{
+	background-color: blue;
+}
