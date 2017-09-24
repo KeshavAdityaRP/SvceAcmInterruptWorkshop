@@ -14,7 +14,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="John Snow,Interrupt, Ace, SVCE, Shri Venkateswara College of Engineering, ACM, SVCE ACM Chapters">
     <meta name="description" content="John Snow's Website">
-    <meta name="author" content="Interrupt Web Development Workshop by SVCE ACM Chapters: Ganesh Jayaraman, Keshav Aditya">
+    <meta name="author" content=" Interrupt Web Development Workshop by SVCE ACM Chapters in collaboration with ACE: Ganesh Jayaraman, Keshav Aditya">
     <link rel="icon" type="image/png" href="images/Favicon.png">    
     <title>My Website</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -52,8 +52,18 @@ session_start();
 	</nav>
 	<div class="jumbotron text-center" id="home">
 		<div class="centered highlight">
-			<h1>Meet John <br> F****** <br> Snow</h1>
-			<p>Ruler of the Seven Kingdoms<br> You may now bend the knee</p> 
+			<h1>Meet<br>Jon Snow</h1>
+			<p>The King in the North</p>
+			<p>
+			<?php
+			if( $_SESSION["message"] != NULL) { 
+				echo $_SESSION["message"];
+			} 
+			else{
+				echo "";
+			}
+			?>	
+			</p> 
 		</div>
 	</div>
 	<div class="container">
@@ -61,13 +71,13 @@ session_start();
 			<div class="row">		
 				<div class="col-sm-12 col-md-4 col-lg-4 text-center">
 					<h2>A Little Bit About Me</h2>
-					<p class="paragraphs">Jon Snow, born Aegon Targaryen, is the son of Lyanna Stark and Rhaegar Targaryen, the late Prince of Dragonstone. From infancy, Jon is presented as the bastard son of Lord Eddard Stark, Lyanna's brother, and raised by Eddard alongside his lawful children at Winterfell but his true parentage is kept secret from everyone, including Jon himself. In order to escape his bastard status, Jon joins the Night's Watch and is eventually chosen as Lord Commander. </p>
+					<p class="paragraphs">I am Jon Snow, born Aegon Targaryen, the son of Lyanna Stark and Rhaegar Targaryen, the late Prince of Dragonstone. From infancy, I was presented as the illegitimate son of Lord Eddard Stark, Lyanna's brother, and raised by Eddard alongside his lawful children at Winterfell but my true parentage was kept secret from everyone, including myself. In order to escape my bastard status, I joined the Night's Watch and was eventually chosen as Lord Commander. </p>
 				</div>
 				<div class="col-sm-12 col-md-4 col-lg-4 text-center">
 					<img id="avatar" src="images/JohnSnow3.jpg">
 				</div>					
 				<div class="col-sm-12 col-md-4 col-lg-4 text-center">
-					<p class="paragraphs">However, he is later murdered in a mutiny and resurrected by the Red Priestess Melisandre. Freed from his Night's Watch vows, Jon joins his cousin, Sansa Stark, in building an army and together they retake Winterfell from House Bolton, restoring House Stark's dominion over the North with Jon being declared the new King in the North. However, after successfully capturing a wight and presenting it to the Lannisters as proof that the Army of the Dead are real, Jon pledges himself and his army to Daenerys Targaryen, Rhaegar's sister, and steps down as King of the North</p>
+					<p class="paragraphs">However, I was murdered in a mutiny and eventually resurrected by the Red Priestess Melisandre. Freed from my Night's Watch vows, I joined my cousin, Sansa Stark, in building an army and together we retook Winterfell from House Bolton, restoring House Stark's dominion over the North and I was declared the new King in the North. However, after successfully capturing a wight and presenting it to the Lannisters as proof that the Army of the Dead are real, I pledged myself and my army to Daenerys Targaryen, Rhaegar's sister, and stepped down as King of the North</p>
 				</div>
 			</div>
 		</section>	
@@ -99,12 +109,12 @@ session_start();
 								</thead>
 								<tbody>
 									<tr>
-										<td>Bow n Arrow</td>
-										<td>7/10</td>
+										<td>Bow and Arrow</td>
+										<td>9/10</td>
 									</tr>
 									<tr>
 										<td>Dagger</td>
-										<td>6/10</td>
+										<td>8/10</td>
 									</tr>
 									<tr>
 										<td>Sword</td>
@@ -116,7 +126,7 @@ session_start();
 									</tr>
 									<tr>
 										<td>Healin</td>
-										<td>2/10</td>
+										<td>7/10</td>
 									</tr>
 									<tr>
 										<td>Stealth</td>
@@ -137,7 +147,7 @@ session_start();
 								<tbody>
 									<tr>
 										<td>Leadership</td>
-										<td>6/10</td>
+										<td>7/10</td>
 									</tr>
 									<tr>
 										<td>Friendship</td>
@@ -149,7 +159,7 @@ session_start();
 									</tr>
 									<tr>
 										<td>Courage</td>
-										<td>5/10</td>
+										<td>10/10</td>
 									</tr>      
 								</tbody>
 							</table>
@@ -158,7 +168,11 @@ session_start();
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-6 text-center">
 					<h3>My Favorite Weapon</h3>
-					<p class="paragraphs">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem.Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem.</p>	
+					<p class="paragraphs">Longclaw is a Valyrian steel sword that was the ancestral weapon of House Mormont for five centuries. When Lord Jeor Mormont retired from his lordship to take the black and command the Night's Watch, he passed it to his son and heir, Ser Jorah Mormont. When Jorah went into exile after trying to sell some poachers into slavery, he left the sword and Ser Jeor Mormont's sister returned it to him on the Wall.
+					Years later, Jeor gave Longclaw to me as a reward for saving his life from a wight. Before giving it to me, he had the pommel remade, replacing the bear with a direwolf, the sigil of House Stark.
+
+					Longclaw is my favorite weapon because it is a bastard sword or hand and a half sword, which means it is a good half a foot longer than a standard long sword, tapered to thrust as well as slash with three fullers incised into the blade to reduce weight. There are ripples in the dark steel indicating it is of Valyrian steel.
+					</p>	
 				</div>
 			</div>
 		</section>
@@ -170,21 +184,24 @@ session_start();
 			</div>
 			<div class="row">			
 				<div class="col-sm-12 col-md-6 col-lg-6 text-center">
-					<p class="paragraphs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+					<p class="paragraphs">Raised under the tutelage of Lord Eddard Stark in Winterfell, I received excellent education about the history of Westeros, the various houses, the geography of Westeros and other elements from Maester Luwin. Apart from this, I received my military training from Ser Rodrik Cassel - the Master-at-arms of Winterfell.
+					</p>
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-6 text-center">
-					<p class="paragraphs">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem.</p>
+					<p class="paragraphs">I was extremely proficient in my swordsmanship and hand-hand combat. I was equally proficient in my archery training.</p>
 				</div>
 			</div>
 			<div class="row" id="experience">
 				<div class="col-sm-12 col-md-2 col-lg-2 text-center">
-					<h3>Experiance</h3>
+					<h3>Experience</h3>
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-6 text-center">
 				<img class="edu" src="images/combat.png">
 				</div>		
 				<div class="col-sm-12 col-md-4 col-lg-4 text-center">		
-					<p class="paragraphs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+					<p class="paragraphs">I served as the personal steward to Lord Commander of the Night's Watch. 
+					I was instrumental in dealing with a wight that crossed over the wall, and was rewarded with Longclaw, the mighty Valyrian Steel sword for my efforts. 
+					Following this, I led an expedition along with the Lord Commander beyond the wall, and joined slaid Qhorin Halfhand as part of my covert operation into the Wildling camp. I successfully posed as a deserter of the Night's Watch and learned the tactics of the Wildlings. Later, I rejoined the Night's watch and with the help of Stannis Baratheon, I successfully captured and slayed the King Beyond the Wall - Mance Rayder. After my resurrection, I took over Winterfell from the traitor Bolton and was crowned King in the North.</p>
 				</div>
 			</div>
 			<div class="row" id="projects">
@@ -195,7 +212,7 @@ session_start();
 				<img class="edu" src="images/sword.jpg">			
 				</div>
 				<div class="col-sm-12 col-md-4 col-lg-4 text-center">
-					<p class="paragraphs">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem.</p>
+					<p class="paragraphs">The dead zombie/skeleton things are not White Walkers.  Those are the dead, raised by the White Walkers, called wights.  Jon only fought one true White Walker, the weird-skinned dude in the black armor who had a badass sword/staff thing.When they initially went at it, Jon was hit hard and lost his sword (Longclaw, given to him by Lord Commander Mormont).  It flew outside of the burned shelter.  During the fight, he picks up another sword (not Longclaw) and uses it against the White Walker.  The sword shatters.  </p>
 				</div>
 			</div>
 		</section>	
@@ -210,7 +227,14 @@ session_start();
 					<img class="edu" src="images/IronThrone.jpg">
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-6 text-center">
-					<p class="paragraphs">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem.</p>
+					<p class="paragraphs">
+					1. Killed a stray wight single handedly without prior knowledge of how they must be killed. <br>
+					2. Succesfully breached the Wildling camp and posed as a deserter. <br>
+					3. Defended the Wall from the Wildling army and captured and executed Mance Rayder.<br>
+					4. Was crowned King in the North. <br>
+					5. Extracted Dragonglass by successfully collaborating with Daenerys Targaryen. <br>
+					6. Successfully survived an onslaught from the wight army and captured a wight alive. <br>
+					</p>
 				</div>
 			</div>
 		</section>

@@ -29,13 +29,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     //die();
 
     if( $ret ) {
-        $_SESSION["message"] = "Sucessfully Registered";
-        header('Location: index.html');
+        $_SESSION["message"] = "Sucessfully Sent Feedback";
+        header('Location: index.php');
     }
         
     else{
-        $_SESSION["message"] = "Error in Registering";
-        header('Location: index.html');
+        $_SESSION["message"] = "Error in Network Connection, Failed to send Feedback";
+        header('Location: index.php');
     } 
 
     
