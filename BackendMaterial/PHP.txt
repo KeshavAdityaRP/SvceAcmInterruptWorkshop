@@ -1,0 +1,39 @@
+1. What is PHP
+	a. php and c are similar.
+	b. why php ? 
+
+
+2. Basic Syntax of PHP
+	a. Declaration of Variables. 
+	b. Using Global Variables like $_POST, $_SERVER etc;
+
+3. Create your own script.
+	a. Hello World.
+	b. Seeing phpinfo()  
+	c. some small snippets with errors and move on to error handling part.
+
+4. Rules for handling php errors :
+	a. Put var_dump and die statement to ensure you are on the right path.
+	b. Check your error logs.
+	c. Check if you are using same variable twice or redundant.
+	d. Put mysqli_error if any error in mysql syntax.
+
+5. Mysql Sample Queries.
+
+6. Introducing into PHP with Mysql
+    
+   a. Mysql commands in php with syntax.
+   b. php binding with mysql. 
+   	  b1. config.php
+   	  b2. mysqli_query, mysqli_fetch
+   c. Use of var_dump, die, echo, and error logs.
+   d. if XAMPP is used :
+				\xampp\apache\logs\error.log 
+	   else :
+	   			/var/log/apache2/error.log 
+
+OPTIONAL :
+	7. Session Maintainance and mailer.
+
+
+8. End Talk about recent back-end technologies.
