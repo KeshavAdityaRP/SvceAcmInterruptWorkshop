@@ -1,0 +1,19 @@
+Dollar signs − All variables are denoted with a leading $. Variables do not need to be declared in advance of assignment, and they have no intrinsic type.
+
+Types − PHP has only two numerical types: integer (corresponding to a long in C) and double (corresponding to a double in C). Strings are of arbitrary length. There is no separate character type.
+
+Type conversion − Types are not checked at compile time, and type errors do not typically occur at runtime either. Instead, variables and values are automatically converted across types as needed.
+
+Arrays − Arrays have a syntax superficially similar to C's array syntax, but they are implemented completely differently. They are actually associative arrays or hashes, and the index can be either a number or a string. They do not need to be declared or allocated in advance.
+
+No structure type − There is no structure in PHP, partly because the array and object types together make it unnecessary. The elements of a PHP array need not be of a consistent type.
+
+No pointers − There are no pointers available in PHP, although the tapeless variables play a similar role. PHP does support variable references. You can also emulate function pointers to some extent, in that function names can be stored in variables and called by using the variable rather than a literal name.
+
+No prototypes − Functions do not need to be declared before their implementation is defined, as long as the definition can be found somewhere in the current code file or included files.
+
+Memory management − The PHP engine is effectively a garbage-collected environment (reference-counted), and in small scripts there is no need to do any deallocation. You should freely allocate new structures - such as new strings and object instances. IN PHP5, it is possible to define destructor for objects, but there is no free or delete. Destructor are called when the last reference to an object goes away, before the memory is reclaimed.
+
+Compilation and linking − There is no separate compilation step for PHP scripts.
+
+Permissiveness − As a general matter, PHP is more forgiving than C (especially in its type system) and so will let you get away with new kinds of mistakes. Unexpected results are more common than errors
